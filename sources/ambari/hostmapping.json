@@ -1,0 +1,7 @@
+{ "blueprint" : "devops",
+  "default_password" : "hortonworks",
+  "host_groups" : [
+    { "name" : "namenode",
+      "hosts" : [ { "fqdn":"namenode.devops.local" } ] },
+    { "name" : "datanode",
+      "hosts" : [ { "fqdn":"datanode.devops.local" } ] } ] }

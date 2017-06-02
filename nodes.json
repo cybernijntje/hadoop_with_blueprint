@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "freeipa.devops.local": {
+      ":ip": "192.168.144.5",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 1024,
+      ":box": "centos/7",
+      ":bootstrap": "bootstrap-freeipa.sh"
+    },
+    "ambari.devops.local": {
+      ":ip": "192.168.144.10",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 1024,
+      ":box": "centos/7",
+      ":bootstrap": "bootstrap-ambari.sh"
+    },
+    "namenode.devops.local": {
+      ":ip": "192.168.144.11",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 4096,
+      ":box": "centos/7",
+      ":bootstrap": "bootstrap-namenode.sh"
+    },
+    "datanode.devops.local": {
+      ":ip": "192.168.144.12",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 4096,
+      ":box": "centos/7",
+      ":bootstrap": "bootstrap-datanode.sh"
+    }
+  }
+}

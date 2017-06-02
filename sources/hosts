@@ -1,0 +1,6 @@
+## vagrant-hostmanager-start
+192.168.144.5	freeipa.devops.local
+192.168.144.10	ambari.devops.local
+192.168.144.11	namenode.devops.local
+192.168.144.12	datanode.devops.local
+## vagrant-hostmanager-end

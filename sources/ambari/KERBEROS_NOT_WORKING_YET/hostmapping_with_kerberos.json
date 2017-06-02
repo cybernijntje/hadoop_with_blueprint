@@ -1,0 +1,18 @@
+{ "blueprint" : "devops",
+  "default_password" : "hortonworks",
+  "credentials" : [
+    {
+      "alias" : "kdc.admin.credential",
+      "principal" : "admin/admin@DEVOPS.LOCAL",
+      "key" : "hortonworks",
+      "type" : "TEMPORARY"
+    }
+  ],
+  "security" : {
+    "type" : "KERBEROS"
+  },
+  "host_groups" : [
+    { "name" : "namenode",
+      "hosts" : [ { "fqdn":"namenode.devops.local" } ] },
+    { "name" : "datanode",
+      "hosts" : [ { "fqdn":"datanode.devops.local" } ] } ] }

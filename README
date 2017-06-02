@@ -1,0 +1,22 @@
+The following vagrant plugins are needed:
+-----------------------------------------
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-scp
+
+
+Extra reading material:
+-----------------------
+http://www.roguelynn.com/words/explain-like-im-5-kerberos/
+https://cwiki.apache.org/confluence/display/AMBARI/Blueprints
+http://henning.kropponline.de/2016/10/01/kerberos-ambari-blueprint-installs/
+https://www.ibm.com/support/knowledgecenter/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.install.doc/doc/bi_install_ranger_blueprint.html
+
+
+Handy one-liners:
+-----------------
+# Exporting an existing cluster to a blueprint (where "devops" is the name of the current cluster):
+curl -H "X-Requested-By: ambari" -X GET -u admin:admin http://ambari.devops.local:8080/api/v1/clusters/devops?format=blueprint
+
+# Checking the progress of a blueprint installation:
+curl -H "X-Requested-By: ambari" -X GET -u admin:admin http://ambari.devops.local:8080/api/v1/clusters/devops/requests
